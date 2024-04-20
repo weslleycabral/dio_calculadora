@@ -1,10 +1,13 @@
 import styles from './Button.module.css';
 
 function ButtonComponent() {
+  
+  const { div } = styles;
+
   return (
-    <div>
-      {/* Seu código aqui */}
-    </div>
+    <button className={div}>
+      
+    </button>
   );
 }
 

@@ -1,0 +1,27 @@
+.logContainer {
+    display: flex;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.h1 {
+    font-weight: 600;
+    color: #535D79;
+    font-size: var(--text-size-small);
+}
+
+.log {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.5rem;
+    align-self: stretch;
+    overflow: hidden;
+
+    color: #808B9D;
+    font-weight: 500;
+    font-size:var(--text-size-medium);
+}

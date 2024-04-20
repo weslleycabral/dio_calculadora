@@ -1,12 +1,11 @@
 import styles from './App.module.css';
-import Container from './components/Container/Container.js';
+import Container from './components/Container/Container';
 
 function App() {
-  const {container, titulo} = styles;
+  const {div}  = styles;
   return (
-    <div className={container}>
-      <h1 className={titulo}>APP CONTAINER</h1>
-    <Container/>
+    <div className={div}>
+      <Container/>
     </div>
   )
 }
