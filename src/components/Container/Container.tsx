@@ -1,6 +1,7 @@
-import Control from '../Control/Control';
-import Input from '../Input/Input';
-import Log from '../Log/Log';
+import Control from '../Control/Control.tsx';
+import Input from '../Input/Input.tsx';
+import Keyboard from '../Keyboard/Keyborad.tsx';
+import Log from '../Log/Log.tsx';
 import styles from './Container.module.css';
 
 function Container() {
@@ -13,7 +14,7 @@ function Container() {
         <Log/>
         <Input/>
         <Control/>
-        
+        <Keyboard/>
       </div>
     </>
   );

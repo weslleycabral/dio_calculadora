@@ -1,0 +1,11 @@
+.flexContainer {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.flexLine {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}

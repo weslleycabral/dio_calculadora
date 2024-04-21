@@ -1,0 +1,60 @@
+.blue {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75), -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.12) inset;
+    background: linear-gradient(139deg, #1B2434 5.77%, #273348 89.37%);
+    color: #B7C2D6;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+.bluelarge {
+    display: flex;
+    width: 10.5rem;
+    height: 4.9375rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75), -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.12) inset;
+    background: linear-gradient(139deg, #1B2434 5.77%, #273348 89.37%);
+    color: #B7C2D6;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+.red {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    background: linear-gradient(138deg, #D8051F 17.53%, #F24257 89.26%);
+    box-shadow: -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.60) inset;
+    color: #ffffff;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+
+.white {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    color: #141528;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75), -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.12) inset;
+    background: linear-gradient(139deg, #929EB1 5.77%, #CBD1DA 89.37%);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75), -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.60) inset;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
