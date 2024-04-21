@@ -34,16 +34,21 @@ function Square({value, color, operator}: SquareProps) {
         if (color.toLowerCase() === 'blue') {
             return (
                 <>
-                <div className={styles[color]}>
-                    {value}
+                <div className={styles.capsule}>
+                    <div className={styles[color]}>
+                        {value}
+                    </div>
                 </div>
+            
                 </>
             );
         } else if (color.toLowerCase() === 'red' || color.toLowerCase() === 'white'){
             return (
                 <>
-                <div className={styles[color]}>
-                    <img src = {icon}/>
+                <div className={styles.capsule}>
+                    <div className={styles[color]}>
+                        <img src = {icon}/>
+                    </div>
                 </div>
                 </>
             );

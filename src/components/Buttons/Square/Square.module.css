@@ -1,3 +1,11 @@
+.capsule {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
 .blue {
     display: flex;
     width: 5rem;
@@ -11,6 +19,10 @@
     color: #B7C2D6;
     font-size: 2.125rem;
     font-weight: 700;
+}
+
+.blue:active {
+    transform: scale(.95);
 }
 
 .bluelarge {
@@ -28,6 +40,10 @@
     font-weight: 700;
 }
 
+.bluelarge:active {
+    transform: scale(.95);
+}
+
 .red {
     display: flex;
     width: 5rem;
@@ -41,6 +57,10 @@
     color: #ffffff;
     font-size: 2.125rem;
     font-weight: 700;
+}
+
+.red:active {
+    transform: scale(.95);
 }
 
 .white {
@@ -57,4 +77,8 @@
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75), -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.60) inset;
     font-size: 2.125rem;
     font-weight: 700;
+}
+
+.white:active {
+    transform: scale(.95);
 }
