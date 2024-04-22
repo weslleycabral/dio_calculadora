@@ -1,20 +1,15 @@
 import styles from './Control.module.css';
-import DarkMode from '../assets/darkModePNG.png';
-import BackSpace from '../assets/backSpace.png';
+import LightMode from '../Buttons/LightMode/LightMode';
+import BackSpace from '../Buttons/BackSpace/BackSpace';
 
 function Control() {
 
-const { controls, modeButton} = styles;
+const { controls } = styles;
   return (
     <>
       <div className={controls}>
-        <button className={`${[modeButton]}`}>
-          <img src={DarkMode}/>
-        </button> 
-        
-        <button className={`${[modeButton]}`}>
-        <img src={BackSpace}/>
-        </button> 
+        <LightMode/>
+        <BackSpace/>
       </div>
     </>
   );

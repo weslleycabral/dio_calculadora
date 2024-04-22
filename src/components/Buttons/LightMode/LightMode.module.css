@@ -20,5 +20,6 @@
     border-radius: 1rem;
     background: linear-gradient(139deg, #030C1A 5.77%, #0C1F3D 89.37%);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75), -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.12) inset;
+    cursor: pointer;
 }
 

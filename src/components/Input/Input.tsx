@@ -8,7 +8,7 @@ const { input, result, display } = styles;
     <>
       <div className={input}>
         <div className={result}>=</div>
-        <div className={display}>100.000,00</div>
+        <div className={display}>0</div>
       </div>
     </>
   );
