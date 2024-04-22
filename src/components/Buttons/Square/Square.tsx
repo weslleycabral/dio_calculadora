@@ -34,12 +34,9 @@ function Square({value, color, operator}: SquareProps) {
         if (color.toLowerCase() === 'blue') {
             return (
                 <>
-                <div className={styles.capsule}>
-                    <div className={styles[color]}>
-                        {value}
-                    </div>
+                <div className={styles[color]} data-value={value}>
+                    {value}
                 </div>
-            
                 </>
             );
         } else if (color.toLowerCase() === 'red' || color.toLowerCase() === 'white'){
@@ -55,7 +52,7 @@ function Square({value, color, operator}: SquareProps) {
         } else if (color.toLowerCase() === 'bluelarge') {
             return (
                 <>
-                <div className={styles[color]}>
+                <div className={styles[color]} data-value={value}>
                     {value}
                 </div>
                 </>

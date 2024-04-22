@@ -2,7 +2,7 @@ import styles from './Log.module.css';
 
 function Log() {
 
-    const { logContainer, h1, log } = styles;
+  const { logContainer, h1, log } = styles;
 
   return (
     <>
