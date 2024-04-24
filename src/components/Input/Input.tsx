@@ -1,10 +1,10 @@
 import styles from './Input.module.css';
 
-interface Inputs {
-  valueInput: string;
+interface Props {
+  value: string;
 }
 
-function Input({valueInput}: Inputs) {
+function Input({value}: Props) {
 
     const { input, result, display } = styles;
 
@@ -12,7 +12,7 @@ function Input({valueInput}: Inputs) {
         <>
           <div className={input}>
             <div className={result}>=</div>
-            <div className={display}>{valueInput}</div>
+            <div className={display}>{value === "" ? "0" : value}</div>
           </div>
         </>
     );

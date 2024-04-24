@@ -1,6 +1,10 @@
 import styles from './Log.module.css';
 
-function Log() {
+interface Props {
+    value: string;
+}
+
+function Log({ value }: Props) {
 
   const { logContainer, h1, log } = styles;
 
@@ -9,7 +13,7 @@ function Log() {
       <div className={logContainer}>
         <h1 className={h1}>Basic Calculator</h1>
         <div className={log}>
-            <div>50.000 + 50.000</div>
+            {value}
         </div>
       </div>
     </>

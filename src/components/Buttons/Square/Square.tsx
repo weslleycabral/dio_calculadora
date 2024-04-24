@@ -9,10 +9,12 @@ import del from './assets/del.svg';
 import square from './assets/square.svg';
 import percentage from './assets/percentage.svg';
 
-interface SquareProps {
-    value?: string;
+interface Props {
     color: string;
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    onValue: Function;
     operator?: string;
+    value?: string;
 }
 
 const operators: { [key: string]: string } = {
@@ -26,15 +28,20 @@ const operators: { [key: string]: string } = {
     percentage: percentage
 };
 
-function Square({value, color, operator}: SquareProps) {
+function Square({value, color, operator, onValue}: Props) {
 
     const icon = operators[operator?.toLowerCase() || ''];
+
+    function handleClick(e) {
+        const content = value || operator;
+        onValue(content);
+    }
 
     const btn = () => {
         if (color.toLowerCase() === 'blue') {
             return (
                 <>
-                <div className={styles[color]} data-value={value}>
+                <div className={styles[color]} onClick={handleClick}>
                     {value}
                 </div>
                 </>
@@ -42,17 +49,15 @@ function Square({value, color, operator}: SquareProps) {
         } else if (color.toLowerCase() === 'red' || color.toLowerCase() === 'white'){
             return (
                 <>
-                <div className={styles.capsule}>
-                    <div className={styles[color]}>
+                    <div className={styles[color]} onClick={handleClick}>
                         <img src = {icon}/>
                     </div>
-                </div>
                 </>
             );
         } else if (color.toLowerCase() === 'bluelarge') {
             return (
                 <>
-                <div className={styles[color]} data-value={value}>
+                <div className={styles[color]} onClick={handleClick}>
                     {value}
                 </div>
                 </>

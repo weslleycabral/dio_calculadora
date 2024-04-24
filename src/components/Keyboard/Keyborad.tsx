@@ -1,51 +1,56 @@
 import Square from '../Buttons/Square/Square';
 import styles from './Keyboard.module.css';
-import {useState} from "react";
+import LightMode from "../Buttons/LightMode/LightMode.tsx";
+import BackSpace from "../Buttons/BackSpace/BackSpace.tsx";
 
-function Keyboard() {
+type Props = {
+    // eslint-disable-next-line @typescript-eslint/ban-types
+    onValue: Function;
+}
 
-    const { flexContainer, flexLine } = styles;
+function Keyboard({ onValue }: Props) {
 
-    const [numView, setNumView] = useState('');
+    const { flexContainer, flexLine, control } = styles;
 
-    function captura (e) {
-        const num: string = e.target.getAttribute("data-value")
-        console.log(`Valor: ${num}`);
-        setNumView(num);
-        console.log(`Valor anterior: ${numView}`);
+    function handleSquare(e: string) {
+        onValue(e)
     }
 
     return (
     <>
-      <div className={ flexContainer } onClick={captura}>
-        <div className={ flexLine }>
-            <Square color='white' operator='delete'/>
-            <Square color='white' operator='square'/>
-            <Square color='white' operator='percentage'/>
-            <Square color='red' operator='division'/>
+      <div className={ flexContainer }>
+        <div className={ control }>
+              <LightMode/>
+              <BackSpace onBack={handleSquare}/>
         </div>
         <div className={ flexLine }>
-            <Square color='blue' value='7'/>
-            <Square color='blue' value='8'/>
-            <Square color='blue' value='9'/>
-            <Square color='red' operator='multiplication'/>
+            <Square color='white' operator='delete' onValue={handleSquare}/>
+            <Square color='white' operator='square' onValue={handleSquare}/>
+            <Square color='white' operator='percentage' onValue={handleSquare}/>
+            <Square color='red' operator='division' onValue={handleSquare}/>
         </div>
         <div className={ flexLine }>
-            <Square color='blue' value='4'/>
-            <Square color='blue' value='5'/>
-            <Square color='blue' value='6'/>
-            <Square color='red' operator='subtraction'/>
+            <Square color='blue' value='7' onValue={handleSquare}/>
+            <Square color='blue' value='8' onValue={handleSquare}/>
+            <Square color='blue' value='9' onValue={handleSquare}/>
+            <Square color='red' operator='multiplication' onValue={handleSquare}/>
         </div>
         <div className={ flexLine }>
-            <Square color='blue' value='1'/>
-            <Square color='blue' value='2'/>
-            <Square color='blue' value='3'/>
-            <Square color='red' operator='addition'/>
+            <Square color='blue' value='4' onValue={handleSquare}/>
+            <Square color='blue' value='5' onValue={handleSquare}/>
+            <Square color='blue' value='6' onValue={handleSquare}/>
+            <Square color='red' operator='subtraction' onValue={handleSquare}/>
         </div>
         <div className={ flexLine }>
-            <Square color='bluelarge' value='0'/>
-            <Square color='blue' value='.'/>
-            <Square color='red' operator='equals'/>
+            <Square color='blue' value='1' onValue={handleSquare}/>
+            <Square color='blue' value='2' onValue={handleSquare}/>
+            <Square color='blue' value='3' onValue={handleSquare}/>
+            <Square color='red' operator='addition' onValue={handleSquare}/>
+        </div>
+        <div className={ flexLine }>
+            <Square color='bluelarge' value='0' onValue={handleSquare}/>
+            <Square color='blue' value='.' onValue={handleSquare}/>
+            <Square color='red' operator='equals' onValue={handleSquare}/>
         </div>
       </div>
     </>
