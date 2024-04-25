@@ -12,8 +12,8 @@ function BtnTheme({ onChangeColor, color }: Props) {
   
   const { externo, interno, externoLight, internoLight } = styles
 
-    function handleChangeColor(e) {
-      onChangeColor(e.target.getAttribute("data-name"));
+    function handleChangeColor(e: React.MouseEvent<HTMLImageElement>) {
+      onChangeColor(e.currentTarget.getAttribute("data-name"));
     }
 
   return (

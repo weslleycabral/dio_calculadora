@@ -7,6 +7,7 @@ import Operations from "../../services/Operations.ts";
 
 let lastSymbol: string = '';
 
+
 function Container() {
 
     const { div, dark, white } = styles;
@@ -16,9 +17,9 @@ function Container() {
     const [log, setLog] = useState("");
     const [historic, setHistoric] = useState("");
 
-    function handleValue(keyboard) {
+    function handleValue(keyboard: string) {
 
-        if (!isNaN(keyboard)) {
+        if (!isNaN(parseInt(keyboard))) {
             if (!(keyboard === "0" && input === "")) {
                 if (lastSymbol === '=') {
                     setTimeout(() => {

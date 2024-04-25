@@ -39,7 +39,7 @@ function Square({value, color, operator, onValue}: Props) {
 
     const icon = operators[operator || ''];
 
-    function handleClick(e) {
+    function handleClick() {
         const content = value || operator;
         onValue(content);
     }
