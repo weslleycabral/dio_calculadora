@@ -10,8 +10,8 @@ type Props = {
 
 function BackSpace({ onBack, color }:Props) {
 
-    function handleBackSpace(e) {
-        onBack(e.target.getAttribute("data-value"));
+    function handleBackSpace(e: React.MouseEvent<HTMLImageElement>) {
+        onBack(e.currentTarget.getAttribute("data-value"));
     }
 
     return (
