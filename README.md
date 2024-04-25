@@ -9,6 +9,8 @@ Nesse projeto não fui usado imagens, tudo é svg e O layout é de minha autoria
 - Nesse projeto não fui usado imagens, tudo é svg.
 - O layout é de minha autoria.
 
+→ [Acessar Calculadora DIO](https://diocalculadora.netlify.app/) ←
+
 ## Layout Figma
 
 Construi 2 propostas para a calculadora, ao criar o botão redondo, o tema da calculadora é alterado.
