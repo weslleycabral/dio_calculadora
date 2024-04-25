@@ -5,13 +5,30 @@
     justify-content: center;
     align-items: center;
 
-    border-radius: 0.5rem;
+    border-radius: 2rem;
     background: linear-gradient(139deg, #929EB1 5.77%, #CBD1DA 89.37%);
     box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.75), -2px -2px 4px 0px rgba(0, 8, 20, 0.80) inset, 2px 2px 4px 0px rgba(228, 231, 240, 0.60) inset;
     cursor: pointer;
 }
 
+.backSpaceWhite {
+    display: flex;
+    width: 5rem;
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 2rem;
+    background: linear-gradient(139deg, #D7DFED 5.77%, #FFF 89.37%);
+    box-shadow: 2px 2px 6px 0px rgba(5, 18, 53, 0.35), -2px -2px 4px 0px rgba(48, 81, 140, 0.40) inset, 4px 3px 4px 0px #FFF inset;
+    cursor: pointer;
+}
+
 .backSpace:active {
+    transform: scale(.95);
+}
+
+.backSpaceWhite:active {
     transform: scale(.95);
 }
 

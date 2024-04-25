@@ -8,7 +8,10 @@ import Operations from "../../services/Operations.ts";
 let lastSymbol: string = '';
 
 function Container() {
-    const { div } = styles;
+
+    const { div, dark, white } = styles;
+
+    const [color, setColor] = useState<boolean>(true);
     const [input, setInput] = useState("");
     const [log, setLog] = useState("");
     const [historic, setHistoric] = useState("");
@@ -166,14 +169,19 @@ function Container() {
                     setInput(input.slice(0,-1))
                 }, 0)
             }
+        } else if (keyboard === 'theme') {
+            setTimeout(() => {
+                setColor(!color);
+            },0)
         }
     }
+
     return (
         <>
-            <div className={div}>
-                <Log value={historic}/>
-                <Input value={input}/>
-                <Keyboard onValue={handleValue}/>
+            <div className={`${div} ${color? dark : white}`}>
+                <Log color={color} value={historic}/>
+                <Input color={color} value={input}/>
+                <Keyboard onValue={handleValue} onColor={color}/>
             </div>
         </>
     );

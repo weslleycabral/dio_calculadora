@@ -25,3 +25,23 @@
     font-weight: 500;
     font-size:var(--text-size-medium);
 }
+
+.h1Light {
+    font-weight: 600;
+    color: #535D79;
+    font-size: var(--text-size-small);
+}
+
+.logLight {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 0.5rem;
+    align-self: stretch;
+    overflow: hidden;
+
+    color: #808B9D;
+    font-weight: 500;
+    font-size:var(--text-size-medium);
+}

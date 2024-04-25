@@ -1,18 +1,19 @@
 import styles from './Log.module.css';
 
 interface Props {
-    value: string;
+  value: string;
+  color: boolean;
 }
 
-function Log({ value }: Props) {
+function Log({ value, color }: Props) {
 
-  const { logContainer, h1, log } = styles;
+  const { logContainer, h1, log, h1Light, logLight } = styles;
 
   return (
     <>
       <div className={logContainer}>
-        <h1 className={h1}>Basic Calculator</h1>
-        <div className={log}>
+        <h1 className={color? h1: h1Light}>Basic Calculator</h1>
+        <div className={color? log: logLight}>
             {value}
         </div>
       </div>

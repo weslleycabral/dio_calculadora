@@ -26,3 +26,32 @@
 
     overflow: hidden;
 }
+
+.inputLight {
+    display: flex;
+    width: 100%;
+    height: 6.9375rem;
+    padding: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 1rem;
+    background: #D6DBE3;   
+}
+
+.resultLight {
+    color: #050505;
+    font-size: 2.125rem;
+    font-weight: 600;
+}
+
+.displayLight {
+    display: flex;
+    justify-content: right;
+    width: 277px;
+    color: #2C2F4B;
+    font-size: var(--text-size-large);
+    font-weight: 500;
+
+    overflow: hidden;
+}
