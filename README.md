@@ -1,30 +1,50 @@
-# React + TypeScript + Vite
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/weslleycabral/dio_calculadora/blob/main/LICENSE)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Calculadora DIO
 
-Currently, two official plugins are available:
+Esse projeto foi um desafio na Formação React Developer, a intuito era por em prática conhecimentos básicos sobre estilização, props e estados do React. Como sou UI/UX designer, resolvi me desafiar e criei um layout no Figma onde os botões do tinham a aparência de 3d.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Nesse projeto não fui usado imagens, tudo é svg e O layout é de minha autoria.
 
-## Expanding the ESLint configuration
+- Nesse projeto não fui usado imagens, tudo é svg.
+- O layout é de minha autoria.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Layout Figma
 
-- Configure the top-level `parserOptions` property like this:
+Construi 2 propostas para a calculadora, ao criar o botão redondo, o tema da calculadora é alterado.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+[Projeto no Figma](https://www.figma.com/file/krHxfWeUBpCf2kaiEYOXbP/Projeto-Calculadora?type=design&node-id=0%3A1&mode=design&t=v38q70Crdzd6GS6K-1)
+
+![Thumb Calculadora](https://github.com/weslleycabral/dio_calculadora/blob/main/Calculadoras.png)
+
+Para rodar esse projeto e testas as funcionalidades execute os passos abaixo:
+
+```bash
+# Download do projeto
+
+git clone https://github.com/weslleycabral/dio_calculadora.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+```bash
+# Entrar na pasta do projeto
+
+cd dio_calculadora
+```
+
+```bash
+# Instalar dependências
+
+npm install
+```
+
+```bash
+# Executar projeto
+
+npm run dev
+```
+
+### Meus contatos
+
+- [Linkedin](https://www.linkedin.com/in/weslley-cabral-857217143/)
+- [Email](weslley.tec@hotmail.com)
+
