@@ -9,23 +9,41 @@ Nesse projeto não fui usado imagens, tudo é svg e O layout é de minha autoria
 - Nesse projeto não fui usado imagens, tudo é svg.
 - O layout é de minha autoria.
 
-## Projeto no Figma
+## Layout Figma
 
 Construi 2 propostas para a calculadora, ao criar o botão redondo, o tema da calculadora é alterado.
 
+[Projeto no Figma](https://www.figma.com/file/krHxfWeUBpCf2kaiEYOXbP/Projeto-Calculadora?type=design&node-id=0%3A1&mode=design&t=v38q70Crdzd6GS6K-1)
+
 ![Thumb Calculadora](https://github.com/weslleycabral/dio_calculadora/blob/main/Calculadoras.png)
 
-Para rodar esse projeto e testas as funcionalidades é clonar esse repositório com o link abaixo:
+Para rodar esse projeto e testas as funcionalidades execute os passos abaixo:
 
 ```bash
+# Download do projeto
+
 git clone https://github.com/weslleycabral/dio_calculadora.git
 ```
 
-E executar o comando:
+```bash
+# Entrar na pasta do projeto
 
-```js
+cd dio_calculadora
+```
+
+```bash
+# Instalar dependências
+
+npm install
+```
+
+```bash
+# Executar projeto
+
 npm run dev
 ```
+
+### Meus contatos
 
 - [Linkedin](https://www.linkedin.com/in/weslley-cabral-857217143/)
 - [Email](weslley.tec@hotmail.com)
